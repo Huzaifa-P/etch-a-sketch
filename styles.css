@@ -1,0 +1,48 @@
+body {
+    background-color: #FFFDD0;
+}
+
+.heading {
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls p {
+    margin: 0;
+}
+
+.slider {
+    width: 250px;
+    margin: 5px 0px;
+}
+
+button {
+    width: 100px;
+}
+
+.gridContainer {
+    display: grid;
+    width: 30vw;
+    height: 30vw;
+    box-sizing: content-box;
+    border: 1px solid black;
+}
+
+.gridContainer div {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
