@@ -1,5 +1,6 @@
 body {
-    background-color: #FFFDD0;
+    background-color: #1F2937;
+    color: white;
 }
 
 .heading {
@@ -11,12 +12,35 @@ body {
     grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
+}
+
+.gridBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34vw;
+    height: 34vw;
+    background-color: #171f2a;
+    border-radius: 20px;
 }
 
 .controls {
     display: flex;
     flex-direction: column;
+    justify-content: center;;
+    align-items: center;
+}
+
+.clearGrid {
+    width: 97px;
+    margin: 20px 0;
+}
+
+.controls-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -38,7 +62,6 @@ button {
     width: 30vw;
     height: 30vw;
     box-sizing: content-box;
-    border: 1px solid black;
 }
 
 .gridContainer div {

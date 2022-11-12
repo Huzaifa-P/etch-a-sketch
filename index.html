@@ -11,12 +11,19 @@
     <h1 class="heading">Etch-A-Sketch</h1>
     <div class="content">
         <div class="controls">
-            <p>Value: <span class="sliderVal"></span></p>
-            <input type="range" min="1" max="100" value="32" class="slider" id="myRange">
-            <button class="size">Change Size</button>
+            <button class="default">default pen</button>
+            <button class="black">black pen</button>
+            <button class="pastel">pastel pen</button>
+            <button class="erase">eraser</button>
+            <button class="clearGrid">Clear Canvas</button>
+            <div class="controls-size">
+                <p>Value: <span class="sliderVal"></span></p>
+                <input type="range" min="1" max="100" value="32" class="slider" id="myRange">
+                <button class="size">Change Size</button>
+            </div>
         </div>
         
-        <div class="gridContainer"></div>
+        <div class="gridBackground"><div class="gridContainer"></div></div>
 
         <script src="script.js"></script>
     </div>
