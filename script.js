@@ -84,6 +84,7 @@ let changeColor = (e) => {
             console.log(e);
             console.log(pen);
             e.target.style.backgroundColor = pen;
+            // a random test
         }
         else {
             mouseClick = false;
