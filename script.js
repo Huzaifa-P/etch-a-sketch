@@ -81,10 +81,7 @@ let changeColor = (e) => {
     if (e.type === 'mousedown') {
         if (mouseClick === false) {
             mouseClick = true;
-            console.log(e);
-            console.log(pen);
             e.target.style.backgroundColor = pen;
-            // a random test
         }
         else {
             mouseClick = false;
