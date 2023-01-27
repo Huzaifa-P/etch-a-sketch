@@ -72,23 +72,25 @@ let createGrid = (size) => {
 
 // set color and paint grid box
 let changeColor = (e) => {
-    let pen = ''
-    if (isDefault) pen = 'blue';
-    if (isPastel) pen = setPastel();
-    if (isBlack) pen = 'black';
-    if (isEraser) pen = 'white';
-
+    let pen = 'blue'
+    if (isDefault === true) pen = 'blue';
+    if (isPastel === true) pen = setPastel();
+    if (isBlack === true) pen = 'black';
+    if (isEraser === true) pen = 'white';
+    
     if (e.type === 'mousedown') {
         if (mouseClick === false) {
             mouseClick = true;
-            e.path[0].style.backgroundColor = pen;
+            console.log(e);
+            console.log(pen);
+            e.target.style.backgroundColor = pen;
         }
         else {
             mouseClick = false;
         }
     }
     else if (e.type === 'mouseover') {
-        if (mouseClick === true) e.path[0].style.backgroundColor = pen;
+        if (mouseClick === true) e.target.style.backgroundColor = pen;
     }
 }
 createGrid(32);
